@@ -41,7 +41,7 @@
     "chartjs-plugin-datalabels": "^2.2.0",
     "cvat-canvas": "link:./../cvat-canvas",
     "cvat-canvas3d": "link:./../cvat-canvas3d",
-    "cvat-core": "link:./../cvat-core",
+    "cvat-core": "file:./../cvat-core",
     "dotenv-webpack": "^8.0.1",
     "error-stack-parser": "^2.0.6",
     "json-logic-js": "^2.0.2",

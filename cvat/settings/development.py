@@ -61,6 +61,15 @@ SILKY_MAX_RECORDED_REQUESTS = 10**4
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES["default"]["HOST"] = os.getenv("CVAT_POSTGRES_HOST", "localhost")
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cvat_db',
+        'USER': 'cvat_user',
+        'PASSWORD': 'cvat_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 SMOKESCREEN_ENABLED = False
